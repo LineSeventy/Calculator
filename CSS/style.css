@@ -1,10 +1,57 @@
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+body {
+    font-family: Arial, sans-serif;
 }
-#container{
+
+#container {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: lightblue;
+    padding: 30px;
+}
+
+.display {
+    height: 40px;
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+    font-size: 24px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.line1, .line2, .line3, .line4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button.num, button.operator, button.equal, button.clear {
+    flex: 1;
+}
+
+button.equal {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.clear {
+    background-color: #f44336;
+    color: white;
 }

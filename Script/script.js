@@ -84,7 +84,9 @@ function clearDisplay() {
     numCurrent = '';
     operator = '';
     numPrevious = '';
-}
+    if (operator && !numPrevious) {
+        numPrevious = numCurrent;
+}}
 
 function updateDisplay() {
     display.textContent = numCurrent || '0';
